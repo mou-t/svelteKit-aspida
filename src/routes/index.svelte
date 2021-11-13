@@ -1,8 +1,14 @@
-<script lang="ts">
+<script context="module" lang="ts">
+	import type { Load } from '@sveltejs/kit';
 	import { client } from '$lib/client';
+	export const load: Load = async () => {
+		const res = client.users.get();
+		console.log(res);
+		return {};
+	};
+</script>
 
-	const res = client.users.get();
-	console.log(res);
+<script lang="ts">
 </script>
 
 <h1>Welcome to SvelteKit</h1>

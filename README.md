@@ -38,7 +38,7 @@ const convertTypeOnlyImport = async (filePath) => {
 };
 ```
 
-- prettier の設定を変える（原因を要確認）
+- aspida 用の型定義ファイル向けに prettier の設定を変える（原因を要確認）
 
 ```
 {
